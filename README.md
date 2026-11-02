@@ -80,7 +80,7 @@ Investigated Microsoft Defender configuration-change events, antivirus scan acti
 
 **Skills Demonstrated:** Windows Event Log Analysis, Endpoint Security Monitoring, Threat Investigation, Event Correlation, PowerShell, Incident Documentation.
 
-[View Case 009](./Case-009-Microsoft-Defender-Investigation.md)
+[View Case 009](Case-009-Microsoft-Defender-Investigation/README.md)
 
 ### SOC Case 010 — Network Connection & Process Investigation
 
