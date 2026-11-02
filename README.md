@@ -120,7 +120,7 @@ Investigated suspicious PowerShell Event ID 4104 warnings, reconstructed script 
 
 **Skills Demonstrated:** PowerShell Threat Hunting, Windows Event Logs, Script Block Analysis, Process Correlation, False-Positive Investigation.
 
-[View Case 011 Incident Report](Case-011-Suspicious-PowerShell-Investigation/incident-report.md)
+[View Case 011](Case-011-Suspicious-PowerShell-Investigation/README.md)
 
 ---
 ### SOC Case 012 — Windows Scheduled Task Persistence Investigation
