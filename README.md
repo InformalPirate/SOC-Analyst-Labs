@@ -21,7 +21,7 @@ This repository documents my learning journey, investigative methods, and progre
 
 Investigated 20 failed Windows authentication events using PowerShell and Windows Security Event Logs. Findings were inconclusive, with no confirmed compromise.
 
-[View Case 004 Investigation](Case-004-Windows-Failed-Logins/incident-report-004.md)
+[View Case 004 Investigation](Case-004-Windows-Failed-Logins/README.md)
 
 ### Case 005 — Unexpected iCloud Background Processes
 
