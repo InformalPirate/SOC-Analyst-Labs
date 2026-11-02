@@ -223,6 +223,8 @@ For the complete investigation, including the evidence timeline, technical findi
 
 My goal is to become an entry-level SOC Analyst and continue developing skills in threat detection, incident response, Windows security, network analysis, and cybersecurity fundamentals.
 
+[SOC Case 011 — Suspicious PowerShell Activity Investigation](Case-011-Suspicious-PowerShell-Investigation/README.md)
+
 This portfolio represents personal hands-on training and will grow as I complete additional investigations and labs.
 
 ---
