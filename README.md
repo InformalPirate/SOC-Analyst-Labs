@@ -46,6 +46,14 @@ Investigated an unfamiliar outbound TCP connection using PowerShell, process ide
 
 [View Case 006 Investigation](Case-006-Spotify-Network-Investigation/incident-report-006.md)
 
+### Case 007 — PowerShell Activity Investigation
+
+Investigated PowerShell Event ID 4104 script block activity using Windows Event Logs, process identification, and parent-child process analysis.
+
+**Conclusion:** Likely benign Windows networking-management activity. No confirmed malicious activity; the exact initiating command remains unverified.
+
+[View Case 007 Investigation](Case-007-PowerShell-Activity-Investigation/incident-report-007.md)
+
 
 ## 🎯 Career Goals
 
