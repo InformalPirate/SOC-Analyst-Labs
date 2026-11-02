@@ -44,7 +44,7 @@ Investigated an unfamiliar outbound TCP connection using PowerShell, process ide
 
 **Conclusion:** Likely benign Spotify network activity. No confirmed malicious activity; the remote endpoint's specific purpose remained unverified.
 
-[View Case 006 Investigation](Case-006-Spotify-Network-Investigation/incident-report-006.md)
+[View Case 006 Investigation](Case-006-Spotify-Network-Investigation/README.md)
 
 ### Case 007 — PowerShell Activity Investigation
 
