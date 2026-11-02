@@ -82,6 +82,27 @@ Investigated Microsoft Defender configuration-change events, antivirus scan acti
 
 [View Case 009](./Case-009-Microsoft-Defender-Investigation.md)
 
+### SOC Case 010 — Network Connection & Process Investigation
+
+**Severity:** Low  
+**Classification:** Likely Benign / Security Configuration Finding  
+**Status:** Closed — Hardening Recommended
+
+Investigated active Windows TCP connections and correlated network activity with running processes using PowerShell. Analyzed Spotify's outbound connections, verified its digital signature, examined remote infrastructure through reverse DNS, and audited Windows Firewall inbound permissions.
+
+**Key Findings:**
+- Identified network activity associated with Chrome, Spotify, and Apple iCloud.
+- Verified Spotify's valid digital signature.
+- Investigated an established connection to `34.158.255.62:4070`.
+- Identified two Spotify listening ports.
+- Discovered broad inbound TCP and UDP firewall allow rules applying to Public and Private networks.
+- Found no established TCP connection to Spotify's local port 57621 during the final check.
+- Recommended reviewing and restricting unnecessary inbound firewall permissions.
+
+**Skills Demonstrated:** Network Traffic Analysis, PowerShell, Process Investigation, Digital Signature Verification, DNS Analysis, Windows Firewall Auditing, Security Hardening, Incident Reporting.
+
+[View Case 010](./Case-010-Network-Connection-Investigation/incident-report.md)
+
 
 ## 🎯 Career Goals
 
