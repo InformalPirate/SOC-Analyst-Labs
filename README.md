@@ -223,6 +223,27 @@ For the complete investigation, including the evidence timeline, technical findi
 Read the Full SOC Case 011 Incident Report
 [SOC Case 011 — Suspicious PowerShell Activity Investigation](Case-011-Suspicious-PowerShell-Investigation/README.md)
 
+### SOC Case 012 — Windows Scheduled Task Persistence Investigation
+
+**Severity:** Low  
+**Classification:** Likely Benign — Orphaned Scheduled Task  
+**Status:** Investigation Complete — Remediation Recommended
+
+Investigated 258 Windows scheduled tasks for suspicious execution paths, elevated privileges, and potential persistence mechanisms.
+
+**Key Findings:**
+- Identified an Intel Update Manager task configured to run daily as SYSTEM with highest privileges.
+- Confirmed the referenced executable and installation directory were missing.
+- Correlated execution error `0x80070002` with the missing executable.
+- Identified disabled Task Scheduler Operational logging as an investigation visibility limitation.
+- Found no additional missing executables in the targeted scan.
+
+**Skills Demonstrated:** Scheduled Task Analysis, Persistence Investigation, PowerShell, Windows Error Analysis, Security Logging, Incident Reporting.
+
+[View Case 012 Investigation](Case-012-Scheduled-Task-Persistence/README.md) | [Full Incident Report](Case-012-Scheduled-Task-Persistence/incident-report.md)
+
+---
+
 ## Career Goals
 My goal is to become an entry-level SOC Analyst and continue developing skills in threat detection, incident response, Windows security, network analysis, and cybersecurity fundamentals.
 
