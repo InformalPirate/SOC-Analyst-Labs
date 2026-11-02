@@ -103,126 +103,26 @@ Investigated active Windows TCP connections and correlated network activity with
 
 [View Case 010](./Case-010-Network-Connection-Investigation/incident-report.md)
 
-# SOC Case 011 — Suspicious PowerShell Activity Investigation
+### SOC Case 011 — Suspicious PowerShell Activity Investigation
 
-## Overview
-
-This lab documents a Windows endpoint security investigation involving suspicious PowerShell script-block logging events.
-
-The investigation focused on Event ID 4104 warnings containing potentially dangerous PowerShell commands, including `Invoke-Expression`, `EncodedCommand`, and `DownloadString`.
-
-Through event log analysis, script-block reconstruction, timeline correlation, and process investigation, the observed activity was assessed as likely benign.
-
-**Final Disposition:** Likely Benign  
 **Severity:** Low / Informational  
-**Confidence:** Moderate  
-**Case Status:** Closed  
-**Investigation Date:** November 2, 2026
+**Classification:** Likely Benign  
+**Status:** Closed
+
+Investigated suspicious PowerShell Event ID 4104 warnings, reconstructed script blocks, and correlated historical activity with available Windows event logs.
+
+**Key Findings:**
+- Identified PowerShell script blocks consistent with Windows Network Diagnostics.
+- Investigated suspicious keywords including `Invoke-Expression`.
+- Identified self-matching detections from authorized security investigations.
+- Documented historical log-retention limitations that prevented complete process attribution.
+- Found no confirmed malicious PowerShell execution in the reviewed evidence.
+
+**Skills Demonstrated:** PowerShell Threat Hunting, Windows Event Logs, Script Block Analysis, Process Correlation, False-Positive Investigation.
+
+[View Case 011 Incident Report](Case-011-Suspicious-PowerShell-Investigation/incident-report.md)
 
 ---
-
-## Investigation Objectives
-
-- Identify potentially suspicious PowerShell activity.
-- Analyze Windows PowerShell Event ID 4104 warnings.
-- Reconstruct and examine logged PowerShell script blocks.
-- Correlate PowerShell events with process-related activity.
-- Identify false positives caused by legitimate PowerShell usage.
-- Document findings and determine an appropriate incident classification.
-
-## Tools and Technologies
-
-- Windows PowerShell
-- Windows Event Viewer
-- Get-WinEvent
-- PowerShell Operational Event Logs
-- Windows Security Event Logs
-
-## Key Event IDs
-
-| Event ID | Description |
-|---|---|
-| 4104 | PowerShell Script Block Logging |
-| 53504 | PowerShell IPC Listening Thread |
-| 4688 | Windows Process Creation |
-| 400 / 403 | PowerShell Engine Lifecycle Events |
-
-## Investigation Summary
-
-### Historical PowerShell Activity — November 12, 2022
-
-Four PowerShell Event ID 4104 warning records were identified:
-
-- Record ID 31201
-- Record ID 31202
-- Record ID 31203
-- Record ID 31204
-
-These records represented four fragments of a single PowerShell script block.
-
-The script was located within a temporary Windows diagnostic directory and contained functions consistent with Windows Network Diagnostics.
-
-The script also included `Invoke-Expression`, which contributed to its identification during suspicious-keyword hunting.
-
-### Process Correlation
-
-An Event ID 53504 record identified a PowerShell IPC listening thread associated with process ID 11812.
-
-Attempts to retrieve corresponding historical process-creation records were unsuccessful.
-
-Further investigation established that the Windows Security log's oldest available record was dated October 26, 2026, meaning process-creation evidence from November 2022 was unavailable.
-
-### Recent PowerShell Activity — November 1–2, 2026
-
-Four additional PowerShell warning records were identified:
-
-- Record ID 32542
-- Record ID 32543
-- Record ID 32546
-- Record ID 32830
-
-These records were consistent with PowerShell commands executed during the analyst's own security investigations.
-
-The detection queries contained the same suspicious keywords they were designed to identify, resulting in self-matching detections.
-
-## Key Findings
-
-1. Historical PowerShell script contents were consistent with legitimate Windows network troubleshooting.
-2. The presence of `Invoke-Expression` alone did not establish malicious activity.
-3. Event ID 53504 provided a process ID but did not independently establish the executable or parent process.
-4. Historical Windows Security logs were unavailable for process attribution.
-5. Recent PowerShell warning events were consistent with authorized analyst activity.
-6. No confirmed malicious PowerShell execution was identified within the reviewed evidence.
-
-## Final Assessment
-
-**Classification: Likely Benign**
-
-The historical activity was consistent with Windows Network Diagnostics, and the recent detections were consistent with authorized PowerShell investigations.
-
-The case was closed with moderate confidence because historical process attribution could not be independently verified.
-
-No confirmed compromise was identified in the reviewed logs.
-
-## Skills Demonstrated
-
-- PowerShell threat hunting
-- Windows Event Log analysis
-- Event ID 4104 investigation
-- Script-block reconstruction
-- Process correlation
-- False-positive analysis
-- Log retention assessment
-- SOC incident documentation
-- Evidence-based incident classification
-
-## Full Incident Report
-
-For the complete investigation, including the evidence timeline, technical findings, limitations, recommendations, and case closure:
-
-Read the Full SOC Case 011 Incident Report
-[SOC Case 011 — Suspicious PowerShell Activity Investigation](Case-011-Suspicious-PowerShell-Investigation/README.md)
-
 ### SOC Case 012 — Windows Scheduled Task Persistence Investigation
 
 **Severity:** Low  
