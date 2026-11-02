@@ -223,7 +223,7 @@ For the complete investigation, including the evidence timeline, technical findi
 Read the Full SOC Case 011 Incident Report
 [SOC Case 011 — Suspicious PowerShell Activity Investigation](Case-011-Suspicious-PowerShell-Investigation/README.md)
 
-Career Goals
+## Career Goals
 My goal is to become an entry-level SOC Analyst and continue developing skills in threat detection, incident response, Windows security, network analysis, and cybersecurity fundamentals.
 
 
