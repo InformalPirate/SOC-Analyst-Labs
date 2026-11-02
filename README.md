@@ -54,6 +54,14 @@ Investigated PowerShell Event ID 4104 script block activity using Windows Event 
 
 [View Case 007 Investigation](Case-007-PowerShell-Activity-Investigation/incident-report-007.md)
 
+### Case 008 — Windows Persistence Investigation
+
+Investigated Windows startup registry entries and scheduled tasks using PowerShell, execution-chain analysis, digital signature verification, SHA-256 hashing, and file permission analysis.
+
+**Conclusion:** Likely benign Intel and Npcap scheduled-task activity. No confirmed malicious persistence identified.
+
+[View Case 008 Investigation](Case-008-Windows-Persistence-Investigation/incident-report-008.md)
+
 
 ## 🎯 Career Goals
 
