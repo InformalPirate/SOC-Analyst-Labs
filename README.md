@@ -38,6 +38,15 @@ Investigated unexpected Apple iCloud processes running on a Windows workstation.
 
 [View Case 005 Investigation](Case-005-iCloud-Process-Investigation/README.md)
 
+### Case 006 — Spotify Network Connection Investigation
+
+Investigated an unfamiliar outbound TCP connection using PowerShell, process identification, digital signature verification, and reverse DNS analysis.
+
+**Conclusion:** Likely benign Spotify network activity. No confirmed malicious activity; the remote endpoint's specific purpose remained unverified.
+
+[View Case 006 Investigation](Case-006-Spotify-Network-Investigation/incident-report-006.md)
+
+
 ## 🎯 Career Goals
 
 My goal is to become an entry-level SOC Analyst and continue developing skills in threat detection, incident response, Windows security, network analysis, and cybersecurity fundamentals.
