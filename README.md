@@ -62,6 +62,26 @@ Investigated Windows startup registry entries and scheduled tasks using PowerShe
 
 [View Case 008 Investigation](Case-008-Windows-Persistence-Investigation/incident-report-008.md)
 
+### SOC Case 009 — Microsoft Defender Configuration and Threat Detection Investigation
+
+**Severity:** Low  
+**Classification:** Likely Benign  
+**Status:** Closed with Residual Uncertainty
+
+Investigated Microsoft Defender configuration-change events, antivirus scan activity, security intelligence updates, malware detection logs, and antivirus exclusions using Windows PowerShell.
+
+**Key Findings:**
+- Verified active Defender protection components.
+- Correlated configuration-hash changes with security intelligence updates.
+- Confirmed successful scheduled antivirus scanning.
+- Found no recorded malware detection events in the available Defender Operational log.
+- Identified five antivirus exclusions associated with previously installed gaming applications.
+- Documented unresolved configuration changes without assuming malicious activity.
+
+**Skills Demonstrated:** Windows Event Log Analysis, Endpoint Security Monitoring, Threat Investigation, Event Correlation, PowerShell, Incident Documentation.
+
+[View Case 009](./Case-009-Microsoft-Defender-Investigation.md)
+
 
 ## 🎯 Career Goals
 
