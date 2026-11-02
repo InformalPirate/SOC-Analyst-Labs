@@ -60,7 +60,7 @@ Investigated Windows startup registry entries and scheduled tasks using PowerShe
 
 **Conclusion:** Likely benign Intel and Npcap scheduled-task activity. No confirmed malicious persistence identified.
 
-[View Case 008 Investigation](Case-008-Windows-Persistence-Investigation/incident-report-008.md)
+[View Case 008 Investigation](Case-008-Windows-Persistence-Investigation/README.md)
 
 ### SOC Case 009 — Microsoft Defender Configuration and Threat Detection Investigation
 
