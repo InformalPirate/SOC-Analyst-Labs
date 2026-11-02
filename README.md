@@ -101,7 +101,7 @@ Investigated active Windows TCP connections and correlated network activity with
 
 **Skills Demonstrated:** Network Traffic Analysis, PowerShell, Process Investigation, Digital Signature Verification, DNS Analysis, Windows Firewall Auditing, Security Hardening, Incident Reporting.
 
-[View Case 010](./Case-010-Network-Connection-Investigation/incident-report.md)
+[View Case 010](Case-010-Network-Connection-Investigation/README.md)
 
 ### SOC Case 011 — Suspicious PowerShell Activity Investigation
 
