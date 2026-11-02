@@ -52,7 +52,7 @@ Investigated PowerShell Event ID 4104 script block activity using Windows Event 
 
 **Conclusion:** Likely benign Windows networking-management activity. No confirmed malicious activity; the exact initiating command remains unverified.
 
-[View Case 007 Investigation](Case-007-PowerShell-Activity-Investigation/incident-report-007.md)
+[View Case 007 Investigation](Case-007-PowerShell-Activity-Investigation/README.md)
 
 ### Case 008 — Windows Persistence Investigation
 
